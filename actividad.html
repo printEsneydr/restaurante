@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Fasti Food EK - Contactos</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="Restaurant Website" name="keywords">
+  <meta content="Restaurant Website" name="description">
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="navbar">
+    <a href="index.html" class="navbar-brand">Fasti <span>Food EK</span></a>
+    <a href="index.html">Inicio</a>
+    <a href="menu.html">Menú</a>
+    <a href="contacto.html">Contactos</a>
+    <a href="actividad.html">Actividad</a>
+  </div>
+
+  <div class="carousel">
+    <div class="carousel-item">
+      <div class="carousel-img">
+        <img src="img/carousel-1.jpg" alt="Image">
+      </div>
+      <div class="carousel-text">
+        <h1>Contacta con <span>Nosotros</span></h1>
+        <img src="img/logo.jpg" alt="Logo" width="150" height="150">
+        <div>
+          <a href="index.html">Inicio</a>
+          <a href="menu.html">Ver el Menú</a>
+          <a href="contacto.html">Contactos</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h2 style="text-align: center;" class="command-title">Es recomendable hacer uso del Zoom para visualizar bien las consultas</h2>
+
+  <div class="col-md-6">
+    <div class="command-item">
+      <div class="command-img">
+        <img src="img/codigo completo.png">
+      </div>
+      <div class="command-content">
+        <h2 class="command-title">50 Datos con 10 Keys recurrentes </h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-6"></div>
+    <div class="command-item">
+      <div class="command-img">
+        <img src="img/comandos.png">
+      </div>
+      <div class="command-content">
+        <h2 class="command-title">20 comandos</h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+
+    <div class="col-md-6">
+      <div class="command-item">
+        <div class="command-img">
+          <img src="img/c1.png">
+        </div>
+        <div class="command-content">
+          <h2 class="command-title">Comando 1: <strong>db.RestaurantEK.find({ precio: { $gt: 16000 } })</strong></h2>
+          <p class="command-description">Encuentra todos los productos con precio mayor a 16,000, el mas caro es 18.000</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="command-item">
+        <div class="command-img">
+          <img src="img/c2.png">
+        </div>
+        <div class="command-content">
+          <h2 class="command-title">Comando 2: db.RestaurantEK.find({ estrellas: { $lte: 3 } })</h2>
+          <p class="command-description">Busca productos con 3 estrellas o menos.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">  
+      <div class="command-item">
+        <div class="command-img">
+          <img src="img/c3.png">
+        </div>
+        <div class="command-content">
+          <h2 class="command-title">Comando 3: db.RestaurantEK.find({ categoria: { $in: ['hamburguesa'] } })</h2>
+          <p class="command-description">: Muestra todos los productos categorizados por hamburguesas.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="command-item">
+        <div class="command-img">
+          <img src="img/c4.png">
+        </div>
+        <div class="command-content">
+          <h2 class="command-title">Comando 4: db.RestaurantEK.find({ $and: [{ calorias: { $gt: 400 } }, { calidad: 'muy buena' }] })</h2>
+          <p class="command-description">Busca productos con mas de 400 calorias y calidad 'muy buena'.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="command-item">
+        <div class="command-img">
+          <img src="img/c5.png">
+        </div>
+        <div class="command-content">
+          <h2 class="command-title">Comando 5: db.RestaurantEK.find({ $or: [{ tiempoPreparacion: { $lt: 5 } }, { tiempoPreparacion: { $gt: 20 } }] })</h2>
+          <p class="command-description">Busca productos que tengan un tiempoPreparacion menor de 5 minutos o mas de 20 minutos //ninguno supera 20 mins  </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="command-item">
+        <div class="command-img">
+          <img src="img/c6.png">
+        </div>
+        <div class="command-content">
+          <h2 class="command-title">Comando 6: db.RestaurantEK.find({ estrellas: { $eq: 5 } })</h2>
+          <p class="command-description">Busca un producto con 5 estrellas.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="command-item">
+        <div class="command-img">
+          <img src="img/c7.png">
+        </div>
+        <div class="command-content">
+          <h2 class="command-title">Comando 7: db.RestaurantEK.find({ oferta_2x1: { $ne: 'si' } }) </h2>
+          <p class="command-description">Muestra productos que NO tengan oferta 2x1.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="command-item">
+        <div class="command-img">
+          <img src="img/c8.png">
+        </div>
+        <div class="command-content">
+          <h2 class="command-title">Comando 8: db.RestaurantEK.find({ sabor: { $not: { $eq: 'bueno' } } })</h2>
+          <p class="command-description">Encuentra productos en donde el sabor es 'bueno'.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="command-item">
+        <div class="command-img">
+          <img src="img/c9.png">
+        </div>
+        <div class="command-content">
+          <h2 class="command-title">Comando 9: db.RestaurantEK.find({ calorias: { $eq: 400 } })</h2>
+          <p class="command-description">Encuentra productos que tengan 400 calorias.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="command-item">
+        <div class="command-img">
+          <img src="img/c10.png">
+        </div>
+        <div class="command-content">
+          <h2 class="command-title">Comando 10: db.RestaurantEK.find({ precio: { $gt: 15000 } }) </h2>
+          <p class="command-description">Busca productos con un precio mayor a 15.000.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="command-item">
+        <div class="command-img">
+          <img src="img/c11.png">
+        </div>
+        <div class="command-content">
+          <h2 class="command-title">Comando 11: db.RestaurantEK.find({ estrellas: { $gte: 4 } })</h2>
+          <p class="command-description">Encuentra productos con 4 o más estrellas.</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-md-6">
+      <div class="command-item">
+        <div class="command-img">
+          <img src="img/c12.png">
+        </div>
+        <div class="command-content">
+          <h2 class="command-title">Comando 12: db.RestaurantEK.find({ calorias: { $lt: 200 } })</h2>
+          <p class="command-description">Busca productos con menos de 200 calorias.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="command-item">
+        <div class="command-img">
+          <img src="img/c13.png">
+        </div>
+        <div class="command-content">
+          <h2 class="command-title">Comando 13: db.RestaurantEK.find({ precio: { $lte: 10000 } })</h2>
+          <p class="command-description">Muestra productos con precio menor o igual a 10.000.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="command-item">
+        <div class="command-img">
+          <img src="img/c14.png">
+        </div>
+        <div class="command-content">
+          <h2 class="command-title">Comando 14: db.RestaurantEK.find({ calidad: { $ne: 'muy buena' } })</h2>
+          <p class="command-description">Encuentra productos cuya calidad no sea 'muy buena'</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="command-item">
+        <div class="command-img">
+          <img src="img/c15.png">
+        </div>
+        <div class="command-content">
+          <h2 class="command-title">Comando 15: db.RestaurantEK.find({ categoria: { $in: ['empanadas', 'sandwich cubano'] } })</h2>
+          <p class="command-description">Encuentra productos que sean sandwich cubano o empanadas.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="command-item">
+        <div class="command-img">
+          <img src="img/c16.png">
+        </div>
+        <div class="command-content">
+          <h2 class="command-title">Comando 16: db.RestaurantEK.find({ categoria: { $nin: ['perro caliente', 'empanadas'] } }) </h2>
+          <p class="command-description">Encuentra productos que no sean perros calientes ni empanadas</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="command-item">
+        <div class="command-img">
+          <img src="img/c17.png">
+        </div>
+        <div class="command-content">
+          <h2 class="command-title">Comando 17: db.RestaurantEK.find({ $and: [{ calorias: { $lt: 700 } }, { calidad: 'muy buena' }] }) </h2>
+          <p class="command-description">Encuentra productos con menos de 700 calorias y calidad 'muy buena'</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="command-item">
+        <div class="command-img">
+          <img src="img/c18.png">
+        </div>
+        <div class="command-content">
+          <h2 class="command-title">Comando 18: db.RestaurantEK.find({ $or: [{ calidad: 'buena' }, { precio: { $gt: 18000 } }] })</h2>
+          <p class="command-description">Encuentra productos con calidad 'buena' o precio mayor a 18.000</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="command-item">
+        <div class="command-img">
+          <img src="img/c19.png">
+        </div>
+        <div class="command-content">
+          <h2 class="command-title">Comando 19: db.RestaurantEK.find({ $or: [{ calorias: { $lt: 650 } }, { oferta_2x1: 'si' }] })</h2>
+          <p class="command-description">Buscar productos con menos de 650 calorías o que estén en oferta 2x1</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="command-item">
+        <div class="command-img">
+          <img src="img/c20.png">
+        </div>
+        <div class="command-content">
+          <h2 class="command-title">Comando 20: db.RestaurantEK.find({ estrellas: { $gte: 4 }, oferta_2x1: { $ne: 'si' } })</h2>
+          <p class="command-description">Buscar productos con estrellas mayores o iguales a 4, excluyendo u omitiendo los que tienen 'si' en oferta 2x1</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <br>
+    <div class="carousel-item">
+      <div class="carousel-text">
+        <div>
+          <a href="https://www.mycompiler.io/view/G7qcSKHXkeM">Link del Codigo en mycompiler</a>
+        </div>
+      </div>
+    </div>
+    <br><br>
+  <div class="footer">
+    <p>Copyright &copy; Fasti Food EK. Todos los derechos reservados.</p>
+    <p>Designed By Karen Perez y Esneyder Ibarra</p>
+  </div>
+</body>
+
+</html>
